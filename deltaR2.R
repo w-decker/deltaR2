@@ -10,7 +10,8 @@ deltaR2 <- function (fullm, restrim, data) {
   
   # get some values 
   N <- nrow(data)
-  K <- length(labels(terms(fullm)))
+  K <- length(labels(terms(fullm))) + 1 # number of betas (including beta 0)
+  df <- N - K - 1
   diff <- K - (length(labels(terms(restrim))))
   
   # get R2
@@ -22,5 +23,5 @@ deltaR2 <- function (fullm, restrim, data) {
   ms <- (diff * (1 - fullm_R2))/(N - K - 1)
   f <- DR2 / ms
   
-  return(c("D" = diff, "N-K-1" = (N-K-1), "Delta R2" = DR2, "F Value" = f))
+  return(c("D" = diff, "df's" = df, "Delta R2" = DR2, "F Value" = f))
 }
