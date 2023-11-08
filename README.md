@@ -8,17 +8,15 @@ You can statistically evaluate whether the inclusions or exclusion of some param
 
 $\Delta R^2$ is the difference between the variance explained by the two models. These two models include a _full_ model in which all variables of interest are included and a _restricted_ model in which only a subset of variables are included. Below is the formula for computings this statistical test.
 
-$
-\begin{equation}
+$$
 F(D, N - K - 1) = \frac{R_{full}^2 - R_{restricted}^2}{MS}
-\end{equation}
-$
+$$
 
-$
-\begin{equation}
+Where
+
+$$
 MS = \frac{D \times (1 - R_{full}^2)}{N - K - 1}
-\end{equation}
-$
+$$
 
 $D$ is the difference in number of parameters included. $N$ is the total number of observations. $K$ is the total number of parameters in the _full_ model, including $\beta_0$.
 
