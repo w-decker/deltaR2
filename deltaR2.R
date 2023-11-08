@@ -1,4 +1,4 @@
-#' Calculate delta R squared for two different linear models
+#' Calculate delta R squared for two linear models
 #' 
 #' @param fullm The full model
 #' @param restrim The restricted model
