@@ -27,7 +27,7 @@ colnames(df) <- c("y", "x1", "x2")
 # Standardize data
 df <- as.data.frame(scale(df, center=TRUE))
 
-# Evaluate delta R2 between full model and restriced model
+# Evaluate delta R2 between full model and restricted model
 full <- y ~ x1 + x2
 restrict <- y ~ x1
 deltaR2(fullm = full, restrim = restrict, data = df)
