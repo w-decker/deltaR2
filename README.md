@@ -23,3 +23,11 @@ $D$ is the difference in number of parameters included. $N$ is the total number 
 ## Implementing this with R
 
 In this repo, I have provided a simulated dataset to which the function `deltaR2()` can be applied to.
+
+## Requirements
+
+To use `deltaR2()` you need not install additional dependencies. However, in [main.R](/main.R), [`MASS`](https://cran.r-project.org/web/packages/MASS/MASS.pdf) is used to simulate data. To install this package, type the following in the R console or consult the package documentation.
+
+```R
+install.packages("MASS")
+```
