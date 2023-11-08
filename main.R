@@ -24,6 +24,9 @@ y <- B[1] + B[2]*d[, 1] + B[3]*d[, 2] + rnorm(100, sd=2)
 df <- as.data.frame(cbind(y, d))
 colnames(df) <- c("y", "x1", "x2")
 
+# Standardize data
+df <- as.data.frame(scale(df, center=TRUE))
+
 # Evaluate delta R2 between full model and restriced model
 full <- y ~ x1 + x2
 restrict <- y ~ x1
