@@ -31,3 +31,4 @@ df <- as.data.frame(scale(df, center=TRUE))
 full <- y ~ x1 + x2
 restrict <- y ~ x1
 deltaR2(fullm = full, restrim = restrict, data = df)
+
