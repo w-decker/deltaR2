@@ -1,4 +1,4 @@
-# deltaR2
+# deltaR2 ⚠️SEE 'FYI'⚠️
 
 Evaluating delta R squared
 
@@ -31,3 +31,6 @@ To use `deltaR2()` you need not install additional dependencies. However, in [ma
 ```R
 install.packages("MASS")
 ```
+
+## FYI
+>The following code has been added to [mrc](https://github.com/w-decker/mrc). Please consult that for more updated versions of `deltaR2()`.
